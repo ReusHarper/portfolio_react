@@ -1,0 +1,38 @@
+@use '../abstracts/_colors' as colors
+@use '../abstracts/_fonts' as fonts
+    
+:root
+    --color-bg:             #{colors.$background}
+    --color-bg-variant:     #{colors.$background--variant}
+    --color-primary:        #{colors.$primary}
+    --color-primary-variant:#{colors.$primary--variant}
+    --color-white:          #{colors.$white}
+    --color-light:          #{colors.$light}
+    
+    --font-primary:         #{fonts.$poppins}
+
+html
+    scroll-behavior: smooth
+
+::-webkit-scrollbar
+    display: none
+
+body
+    font-family: 'Poppins', sans-serif
+    background-color: var(--color-bg)
+    color: var(--color-white)
+    background-image: url("../src/assets/bg-texture.png")
+
+/* ==================== GENERAL ==================== */
+.container
+    width: var(--container-width-lg)
+    margin: 0 auto
+
+h1, h2, h3, h4, h5
+    font-weight: 500
+
+h1
+    font-size: 2.5rem
+
+section
+    margin-top: 8rem
